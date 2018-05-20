@@ -1,0 +1,24 @@
+{
+  "name": "cucumber-examples",
+  "version": "1.0.0",
+  "description": "A repo exploring Behavior Driven Development with Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "acceptance:tests": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbelmont/cucumber-examples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbelmont/cucumber-examples/issues"
+  },
+  "homepage": "https://github.com/jbelmont/cucumber-examples#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "cucumber": "^4.2.1"
+  }
+}
