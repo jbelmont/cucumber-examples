@@ -1,10 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('Cucumber Steps') {
+    stage('Build') {
       steps {
-        sh '''npm install
-npm run acceptance:tests'''
+        sh 'npm install'
+      }
+    }
+    stage('Run Acceptance Tests') {
+      steps {
+        sh 'npm run acceptance:tests'
       }
     }
   }
