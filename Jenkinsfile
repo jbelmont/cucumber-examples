@@ -1,12 +1,20 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image '10.4.0-slim'
+      args '-v /Users/jean-marcelbelmont/jenkins_data'
+    }
+
+  }
   stages {
     stage('Build') {
       steps {
-        sh 'npm install'
+        sh '''node --version
+
+npm install'''
       }
     }
-    stage('Run Acceptance Tests') {
+    stage('Cucumber Tests') {
       steps {
         sh 'npm run acceptance:tests'
       }
