@@ -1,8 +1,8 @@
 pipeline {
   agent {
     docker {
-      image '10.4.0-slim'
       args '-v /Users/jean-marcelbelmont/jenkins_data'
+      image 'node:10-alpine'
     }
 
   }
